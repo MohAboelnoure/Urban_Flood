@@ -1,0 +1,18 @@
+@software{moh_aboelnour_2025_16761354,
+  author       = {Moh Aboelnour},
+  title        = {MohAboelnoure/Urban\_Flood: IMA\_Flood},
+  month        = aug,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {10.5281/zenodo.16761354},
+  url          = {https://doi.org/10.5281/zenodo.16761354},
+  swhid        = {swh:1:dir:1714302054d4a4c6b42617cb52efd84420e1e77f
+                   ;origin=https://doi.org/10.5281/zenodo.16761353;vi
+                   sit=swh:1:snp:ed712832d3d901da157685bcb3ba67b575e1
+                   88a8;anchor=swh:1:rel:07df4d22663ba03773ff6411f608
+                   cdb070a8a38d;path=MohAboelnoure-
+                   Urban\_Flood-d5a18b1
+                  },
+}
+}
