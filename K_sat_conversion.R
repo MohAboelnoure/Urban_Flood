@@ -18,8 +18,16 @@ print(global(Ksat_um_s, c("min", "max", "mean"), na.rm = TRUE))
 # Therefore, 1 µm/s = 86.4 mm/day
 Ksat_mm_day <- Ksat_um_s * 86.4
 
-# --- Save Output ---
-writeRaster(Ksat_mm_day, ksat_output, overwrite = TRUE)
+#Define Δt (in days)
+# Example: Δt = 1 for daily rainfall, 0.25 for 6-hour storm, etc.
+delta_t <- 1  # <-- Adjust this as needed
+
+# Compute event-based drainage depth (mm)
+Ksat_mm_event <- Ksat_mm_day * delta_t
+
+#Save Output ---
+writeRaster(Ksat_mm_event, ksat_output, overwrite = TRUE)
 cat("\nConversion complete.\n")
-cat("Saved converted Ksat raster (mm/day) to:\n", ksat_output, "\n")
+cat("Saved Ksat (drainage depth, mm over event duration Δt =", delta_t, "days):\n", ksat_output, "\n")
+
 
